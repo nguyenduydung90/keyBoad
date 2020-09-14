@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <img  id="img1" style="width: 200px" src="https://static.bongda24h.vn/medias/standard/2015/7/3/Tong-quan-tat-ca-nhung-trai-bong-da-duoc-su-dung-o-Premier-League-hinh-anh.jpg">
+    <p>Click button below to move the image to right</p>
+    <input type="button" value="ClickMe" onclick="moveRight()">
+</form>
+<script>
+let imgObj= document.getElementById('img1');
+function init(){
+    imgObj= document.getElementById('img1');
+    imgObj.style.position='relative';
+    imgObj.style.left= '0px'
+}
+function moveRight(){
+    imgObj.style.left= parseInt(imgObj.style.left) + 5 + "px"
+}
+window.onload= init;
+
+
+        
+
+
+</script>
+</body>
+</html>
